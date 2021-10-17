@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "codegen": "graph codegen ./token.yaml",
+    "deploy": "graph deploy --product hosted-service --node http://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ miklt/usdt-transfers2 ./token.yaml --access-token "
   },
   "keywords": [],
   "author": "",
